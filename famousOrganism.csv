@@ -19,13 +19,14 @@ taxonID;acceptedNameUsageID;originalNameUsageID;taxonRank;taxonRemarks;scientifi
 18;;;species;Eluveitie;Paracidaris eluveitie;Hostettler & Menkveld;2015;;;;Animalia;;;;;
 19;;;species;Mark Knopfler;Masiakasaurus knopfleri;Sampson et al.;2001;;doi:10.1038/35054046;;Animalia;Chordata;Reptilia;Saurischia;Noasauridae;
 20;;;species;Greg Graffin;Qiliana graffini;Ji et al.;2011;;doi:10.1111/j.1096-3642.2010.00671.x;;Animalia;;;;;
-21;;;species;Mick Jagger;Jaggermeryx;Miller et al.;2014;;http://www.bioone.org/doi/full/10.1666/13-122;;Animalia;;;;;
+21;;;genus;Mick Jagger;Jaggermeryx;Miller et al.;2014;;http://www.bioone.org/doi/full/10.1666/13-122;;Animalia;Chordata;Mammalia;;;
+21b;;;species;Mick Jagger;Jaggermeryx naida;Miller et al.;2014;;http://www.bioone.org/doi/full/10.1666/13-122;;Animalia;Chordata;Mammalia;;;
 22;;;species;Mick Jagger;Aegrotocatellus jaggeri;Adrain & Edgecombe;1995;;http://www.jstor.org/discover/10.2307/1306307?sid=21105734904711&uid=3737760&uid=2&uid=4;;Animalia;;;;;
 23;;;species;Mick Jagger;Anomphalus jaggerius;Miller et al.;1972;;http://jpaleontol.geoscienceworld.org/content/46/2/249.abstract;;Animalia;;;;;
 24;;;species;Keith Richards;Perirehaedulus richardsi;Adrain & Edgecombe;1995;;http://www.jstor.org/discover/10.2307/1306307?sid=21105734904711&uid=3737760&uid=2&uid=4;;Animalia;;;;;
 25;;;species;Nanker Phelge;Aegrotocatellus nankerphelgeorum;Adrain & Edgecombe;1995;;http://www.jstor.org/discover/10.2307/1306307?sid=21105734904711&uid=3737760&uid=2&uid=4;;Animalia;;;;;
 26;;;species;Michael Jackson;Mesoparapylocheles michaeljacksoni;Fraaije et al.;2012;;doi:10.1127/0077-7749/2012/0213;;Animalia;;;;;
-27;;;species;Jimi Hendrix;Hendrixella;Bannikov & Carnevale;2009;;doi:10.1007/s00015-009-1331-3;;Animalia;;;;;
+27;;;genus;Jimi Hendrix;Hendrixella;Bannikov & Carnevale;2009;;doi:10.1007/s00015-009-1331-3;;Animalia;;;;;
 28;;;species;Robert Fripp;Frippia labroiformis;Bannikov & Carnevale;2012;;http://link.springer.com/article/10.1007/s00015-009-1331-3;;Animalia;;;;;
 29;;;species;Tarkus;Tarkus squirei;Carnevale & Pietsch;2012;;doi:10.1017/S0016756810000907;;Animalia;;;;;
 30;;;species;John Lennon;Avalanchurus lennoni;Edgecom & Chatte;1993;;https://www.schweizerbart.de/papers/pala/list/A226#issue4-6;;Animalia;;;;;
@@ -35,7 +36,7 @@ taxonID;acceptedNameUsageID;originalNameUsageID;taxonRank;taxonRemarks;scientifi
 34;;;species;Art Garfunel;Avalanchurus garfunkeli;Edgecom & Chatte;1993;;https://www.schweizerbart.de/papers/pala/list/A226#issue4-6;;Animalia;;;;;
 35;;;species;Paul Simon;Avalanchurus simoni;Edgecom & Chatte;1993;;https://www.schweizerbart.de/papers/pala/list/A226#issue4-6;;Animalia;;;;;
 36;;;species;Miles Davis;Milesdavis eldredgei;Liebermann;1994;;http://hdl.handle.net/2246/831;;Animalia;;;;;
-37;;;species;David Attenborough;Sirdavidia;Couvreur et al.;2015;;doi:10.3897/phytokeys.46.8937;;Plantae;;;;;
+37;;;genus;David Attenborough;Sirdavidia;Couvreur et al.;2015;;doi:10.3897/phytokeys.46.8937;;Plantae;;;;;
 38;;;species;David Attenborough;Electrotettix attenboroughi;Heads et al.;2014;;doi:10.3897/zookeys.429.8020;;Animalia;;;;;
 39;;;species;David Attenborough;Hieracium attenboroughianum;Rich;2014;;doi:10.1179/2042349714Y.0000000051;;Plantae;;;;;
 40;;;species;David Attenborough;Polioptila attenboroughi;Whittacker et al.;2013;;http://treatment.plazi.org/id/67E76402-2B97-4733-856F-ED3A7A1822AC;;Animalia;;;;;
@@ -61,7 +62,7 @@ taxonID;acceptedNameUsageID;originalNameUsageID;taxonRank;taxonRemarks;scientifi
 60;;;genus;Barack Obama;Obamadon;Longrich et al., 2013;2013;;doi:10.1073/pnas.1303907110;TRUE;Animalia;Chordata;Reptilia;Squamata;;
 61;;;species;Barack Obama;Obamadon gracillis;Longrich et al., 2013;2013;;doi:10.1073/pnas.1303907110;TRUE;Animalia;Chordata;Reptilia;Squamata;;
 62;;;genus;Barack Obama;Baracktrema;Roberts et al., 2016;2016;;doi:10.1645/15-893;FALSE;Animalia;Platyhelminthes;Trematoda;Strigeidida;Schistosomatidae;
-63;;;species;Barack Obama;Baracktrema obamai;Roberts et al., 2016;2016;;doi:10.1645/15-893;FALSE;;;;;;
+63;;;species;Barack Obama;Baracktrema obamai;Roberts et al., 2016;2016;;doi:10.1645/15-893;FALSE;Animalia;Platyhelminthes;Trematoda;Strigeidida;Schistosomatidae;
 64;;;species;Barack Obama;Etheostoma obama;Mayden & Layman, 2012;2012;Bulletin of the Alabama Museum of Natural History 30:1-83.;;FALSE;Animalia;Chordata;;Perciformes;Percidae;http://specifyassets.nhm.ku.edu/Ichthyology/originals/sp62866480801339482162.att.pdf
 65;;;species;Barack Obama;Caloplaca obamae;K.Knudsen, 2009;2009;Opuscula Philolichenum, 6: 37-40.;;FALSE;Fungi;Lecanoromycetes;;Teloschistales;Teloschistaceae;
 66;;;species;Barack Obama;Aptostichus barackobamai;Bond, 2012;2012;ZooKeys 252: 1-209;doi:10.3897/zookeys.252.3588;FALSE;Animalia;Arthropoda;Arachnida;Araneae;Euctenizidae;https://en.wikipedia.org/wiki/Aptostichus_barackobamai
