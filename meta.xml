@@ -9,17 +9,42 @@
     <field index="2" term="http://rs.tdwg.org/dwc/terms/originalNameUsageID" />
     <field index="3" term="http://rs.tdwg.org/dwc/terms/taxonRank" />
     <field index="4" term="http://rs.tdwg.org/dwc/terms/taxonRemarks"/>
-    <field index="5" term="http://rs.tdwg.org/dwc/terms/scientificName" />
-    <field index="6" term="http://rs.tdwg.org/dwc/terms/scientificNameAuthorship"/>
-    <field index="7" term="http://rs.tdwg.org/dwc/terms/namePublishedInYear" />
-    <field index="8" term="http://rs.tdwg.org/dwc/terms/namePublishedIn"/>
-    <field index="9" term="http://rs.tdwg.org/dwc/terms/namePublishedInID"/>
-    <field index="11" term="http://rs.tdwg.org/dwc/terms/kingdom"/>
-    <field index="12" term="http://rs.tdwg.org/dwc/terms/phylum"/>
-    <field index="13" term="http://rs.tdwg.org/dwc/terms/class"/>
-    <field index="14" term="http://rs.tdwg.org/dwc/terms/order"/>
-    <field index="15" term="http://rs.tdwg.org/dwc/terms/family"/>
-    <field index="16" term="http://purl.org/dc/terms/references"/>
+    <field index="6" term="http://rs.tdwg.org/dwc/terms/scientificName" />
+    <field index="7" term="http://rs.tdwg.org/dwc/terms/scientificNameAuthorship"/>
+    <field index="8" term="http://rs.tdwg.org/dwc/terms/namePublishedInYear" />
+    <field index="9" term="http://rs.tdwg.org/dwc/terms/namePublishedIn"/>
+    <field index="10" term="http://rs.tdwg.org/dwc/terms/namePublishedInID"/>
+    <field index="12" term="http://rs.tdwg.org/dwc/terms/kingdom"/>
+    <field index="13" term="http://rs.tdwg.org/dwc/terms/phylum"/>
+    <field index="14" term="http://rs.tdwg.org/dwc/terms/class"/>
+    <field index="15" term="http://rs.tdwg.org/dwc/terms/order"/>
+    <field index="16" term="http://rs.tdwg.org/dwc/terms/family"/>
+    <field index="17" term="http://purl.org/dc/terms/references"/>
   </core>
+  <extension encoding="utf-8" fieldsTerminatedBy=";" linesTerminatedBy="\n" fieldsEnclosedBy="" ignoreHeaderLines="1" rowType="http://rs.gbif.org/terms/1.0/SpeciesProfile">
+      <files>
+          <location>famousOrganism.csv</location>
+      </files>
+      <coreid index="0" />
+      <field index="11" term="http://rs.gbif.org/terms/1.0/isExtinct"/>
+  </extension>
+  <extension encoding="utf-8" fieldsTerminatedBy=";" linesTerminatedBy="\n" fieldsEnclosedBy="" ignoreHeaderLines="1" rowType="http://rs.gbif.org/terms/1.0/VernacularName">
+      <files>
+          <location>famousOrganism.csv</location>
+      </files>
+      <coreid index="0" />
+      <field index="5" term="http://rs.tdwg.org/dwc/terms/vernacularName"/>
+      <field default="eng" term="http://purl.org/dc/terms/language"/>
+  </extension>
+  <extension encoding="utf-8" fieldsTerminatedBy=";" linesTerminatedBy="\n" fieldsEnclosedBy="" ignoreHeaderLines="1" rowType="http://rs.gbif.org/terms/1.0/Multimedia">
+      <files>
+          <location>famousOrganism.csv</location>
+      </files>
+      <coreid index="0" />
+      <field index="18" term="http://purl.org/dc/terms/identifier"/>
+      <field index="19" term="http://purl.org/dc/terms/license"/>
+      <field index="20" term="http://purl.org/dc/terms/creator"/>
+      <field default="StillImage" term="http://purl.org/dc/terms/type"/>
+  </extension>
 </archive>
  
