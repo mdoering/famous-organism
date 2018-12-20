@@ -1,17 +1,17 @@
 taxonID;acceptedNameUsageID;originalNameUsageID;taxonRank;taxonRemarks;vernacularName;scientificName;scientificNameAuthorship;namePublishedInYear;namePublishedIn;namePublishedInID;fossil;kingdom;phylum;class;order;family;references;imageURL;imageLicense;imageCreator
-1;;;species;Lemmy Kilmister;;Kalloprion kilmisteri;Eriksson;2006;;doi:10.1080/11035890601282097;;Animalia;;;;;;;;
+1;;;species;Lemmy Kilmister (Motörhead);;Kalloprion kilmisteri;Eriksson;2006;;doi:10.1080/11035890601282097;;Animalia;Annelida;Polychaeta;Aciculata;Kalloprionidae;;;;
 2;;;species;King David;;Kingnites diamondi;Eriksson;2012;;doi:10.1080/11035897.2012.704066;;Animalia;;;;;;;;
 3;;;species;Beyoncé;;Scaptia beyonceae;Lessard & Yeates;1972;;doi:10.1111/j.1440-6055.2011.00809.x;;Animalia;Arthropoda;;;;;;;
 4;;;species;Frank Zappa;;Oenonites zappae;Eriksson;1972;;http://www.tandfonline.com/doi/pdf/10.1080/11035899709546480#.VQ7Mq-FO3aw;;Animalia;;;;;;;;
 5;;;species;Frank Zappa;;Amaurotoma zappa;Plas;1972;;doi:10.5281/zenodo.16284;;Animalia;;;;;;;;
 6;;;species;Frank Zappa;;Ranzania zappai;Carnevale;2007;;http://www.stsn.it/it/palaeontographia-italica.html;;Animalia;;;;;;;;
 7;;;species;Frank Zappa;;Zappaichthys harzhauseri;Carnevale & Collette;2014;;doi:10.1080/02724634.2014.854801;;Animalia;;;;;;;;
-8;;;species;AC/DC;;Maldybulakia malcomlmi;Edgecombe;1998;;doi:10.3853/j.0067-1975.50.1998.1288;;Animalia;;;;;;;;
-9;;;species;AC/DC;;Maldybulakia angusi;Edgecombe;1998;;doi:10.3853/j.0067-1975.50.1998.1288;;Animalia;;;;;;;;
-10;;;species;Ramones;;Mackenziurus johnny;Edgecombe;1990;;http://hdl.handle.net/2246/5060;;Animalia;;;;;;;;
-11;;;species;Ramones;;Mackenziurus deedeei;Edgecombe;1990;;http://hdl.handle.net/2246/5060;;Animalia;;;;;;;;
-12;;;species;Ramones;;Mackenziurus ceejayi;Edgecombe;1990;;http://hdl.handle.net/2246/5060;;Animalia;;;;;;;;
-13;;;species;Ramones;;Mackenziurus joeyi;Edgecombe;1990;;http://hdl.handle.net/2246/5060;;Animalia;;;;;;;;
+8;;;species;Malcom Young (AC/DC);;Maldybulakia malcomlmi;Edgecombe;1998;;doi:10.3853/j.0067-1975.50.1998.1288;TRUE;Animalia;Arthropoda;;Xiphosura;;;;;
+9;;;species;Angus Young (AC/DC);;Maldybulakia angusi;Edgecombe;1998;;doi:10.3853/j.0067-1975.50.1998.1288;TRUE;Animalia;Arthropoda;;Xiphosura;;;;;
+10;;;species;Ramones;;Mackenziurus johnny;Edgecombe;1990;;http://hdl.handle.net/2246/5060;;Animalia;Arthropoda;Trilobita;Phacopida;Encrinuridae;;;;
+11;;;species;Ramones;;Mackenziurus deedeei;Edgecombe;1990;;http://hdl.handle.net/2246/5060;;Animalia;Arthropoda;Trilobita;Phacopida;Encrinuridae;;;;
+12;;;species;Ramones;;Mackenziurus ceejayi;Edgecombe;1990;;http://hdl.handle.net/2246/5060;;Animalia;Arthropoda;Trilobita;Phacopida;Encrinuridae;;;;
+13;;;species;Ramones;;Mackenziurus joeyi;Edgecombe;1990;;http://hdl.handle.net/2246/5060;;Animalia;Arthropoda;Trilobita;Phacopida;Encrinuridae;;;;
 14;;;species;Sex Pistols;;Arcticalymene viciousi;Adrain & Edgecombe;1997;;http://www.jstor.org/discover/10.2307/1306585?sid=21105712496781&uid=3737760&uid=2129&uid=2&uid=70&uid=4;;Animalia;;;;;;;;
 15;;;species;Sex Pistols;;Arcticalymene cooki;Adrain & Edgecombe;1997;;http://www.jstor.org/discover/10.2307/1306585?sid=21105712496781&uid=3737760&uid=2129&uid=2&uid=70&uid=4;;Animalia;;;;;;;;
 16;;;species;Sex Pistols;;Arcticalymene rotteni;Adrain & Edgecombe;1997;;http://www.jstor.org/discover/10.2307/1306585?sid=21105712496781&uid=3737760&uid=2129&uid=2&uid=70&uid=4;;Animalia;;;;;;;;
