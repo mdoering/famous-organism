@@ -1,7 +1,7 @@
 <archive xmlns="http://rs.tdwg.org/dwc/text/" metadata="eml.xml">
-  <core encoding="utf-8" fieldsTerminatedBy=";" linesTerminatedBy="\n" fieldsEnclosedBy="" ignoreHeaderLines="1" rowType="http://rs.tdwg.org/dwc/terms/Taxon">
+  <core encoding="utf-8" fieldsTerminatedBy="\t" linesTerminatedBy="\n" fieldsEnclosedBy="" ignoreHeaderLines="1" rowType="http://rs.tdwg.org/dwc/terms/Taxon">
     <files>
-      <location>famousOrganism.csv</location>
+      <location>famousOrganism.tsv</location>
     </files>
     <id index="0" />
     <field index="0" term="http://rs.tdwg.org/dwc/terms/taxonID" />
