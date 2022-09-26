@@ -23,14 +23,14 @@
   </core>
   <extension encoding="utf-8" fieldsTerminatedBy=";" linesTerminatedBy="\n" fieldsEnclosedBy="" ignoreHeaderLines="1" rowType="http://rs.gbif.org/terms/1.0/SpeciesProfile">
       <files>
-          <location>famous.csv</location>
+          <location>famous.tsv</location>
       </files>
       <coreid index="0" />
       <field index="11" term="http://rs.gbif.org/terms/1.0/isExtinct"/>
   </extension>
   <extension encoding="utf-8" fieldsTerminatedBy=";" linesTerminatedBy="\n" fieldsEnclosedBy="" ignoreHeaderLines="1" rowType="http://rs.gbif.org/terms/1.0/VernacularName">
       <files>
-          <location>famous.csv</location>
+          <location>famous.tsv</location>
       </files>
       <coreid index="0" />
       <field index="5" term="http://rs.tdwg.org/dwc/terms/vernacularName"/>
@@ -38,7 +38,7 @@
   </extension>
   <extension encoding="utf-8" fieldsTerminatedBy=";" linesTerminatedBy="\n" fieldsEnclosedBy="" ignoreHeaderLines="1" rowType="http://rs.gbif.org/terms/1.0/Multimedia">
       <files>
-          <location>famous.csv</location>
+          <location>famous.tsv</location>
       </files>
       <coreid index="0" />
       <field index="18" term="http://purl.org/dc/terms/identifier"/>
