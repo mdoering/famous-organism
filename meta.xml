@@ -44,6 +44,7 @@
       <field index="18" term="http://purl.org/dc/terms/identifier"/>
       <field index="19" term="http://purl.org/dc/terms/license"/>
       <field index="20" term="http://purl.org/dc/terms/creator"/>
+      <field index="21" term="http://purl.org/dc/terms/references"/>
       <field default="StillImage" term="http://purl.org/dc/terms/type"/>
   </extension>
 </archive>
