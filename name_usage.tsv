@@ -38,7 +38,7 @@ ID	parentID	basionymID	status	rank	etymology	vernacularName	scientificName	autho
 36			accepted	species	Miles Davis		Milesdavis eldredgei	Liebermann	1994			Animalia					http://hdl.handle.net/2246/831				
 37			accepted	genus	David Attenborough		Sirdavidia	Couvreur et al.	2015	Couvreur_2015		Plantae									
 38			accepted	species	David Attenborough		Electrotettix attenboroughi	Heads & Thomas, 2014	2014	Heads_2014		Animalia	Arthropoda	Insecta	Orthoptera						
-39			accepted	species	David Attenborough		Hieracium attenboroughianum	Rich	2014	Rich_2014		Plantae									
+39			accepted	species	David Attenborough		Hieracium attenboroughianum	Rich	2014	Rich_2014		Plantae			Asterales	Asteraceae					
 40			accepted	species	David Attenborough		Polioptila attenboroughi	Whittaker, Aleixo, Smith & Klicka, 2013	2013			Animalia	Chordata	Aves	Passeriformes		http://treatment.plazi.org/id/67E76402-2B97-4733-856F-ED3A7A1822AC				
 41			accepted	species	David Attenborough		Prethopalpus attenboroughi	Baehr & Harvey, 2012	2012	Baehr_2012		Animalia									
 42			accepted	species	David Attenborough		Trigonopterus attenboroughi	Riedel, 2014	2014	Riedel_2014		Animalia	Arthropoda	Insecta	Coleoptera						
@@ -48,7 +48,7 @@ ID	parentID	basionymID	status	rank	etymology	vernacularName	scientificName	autho
 46			accepted	species	Roy Orbison		Orectochilus orbisonorum		2008			Animalia	Arthropoda		Coleoptera						
 47			accepted	species	Freddie Mercury		Cirolana mercuryi					Animalia	Arthropoda								
 48			accepted	species	Jerry Garcia		Cryptocercus garciai 					Animalia	Arthropoda	Insecta							
-49			accepted	species	Green Day		Macrocarpaea dies-viridis					Plantae									
+49			accepted	species	Green Day		Macrocarpaea dies-viridis					Plantae			Gentianales	Gentianaceae					
 50			accepted	species	Frank Zappa		Pachygnatha zappa					Animalia	Arthropoda	Arachnida							
 51		52	accepted	species	Sting		Dendropsophus stingi	(Kaplan, 1994)	2005			Animalia	Chordata	Amphibia	Anura	Hylidae					
 52	51		synonym	species	Sting		Hyla stingi 	Kaplan, 1994	1994	Kaplan_1994		Animalia	Chordata	Amphibia	Anura	Hylidae					
