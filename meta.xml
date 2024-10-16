@@ -1,4 +1,4 @@
-<archive xmlns="http://rs.tdwg.org/dwc/text/" metadata="eml.xml">
+<archive xmlns="http://rs.tdwg.org/dwc/text/" metadata="metadata.yaml">
   <core encoding="utf-8" fieldsTerminatedBy="\t" linesTerminatedBy="\n" fieldsEnclosedBy="" ignoreHeaderLines="1" rowType="http://rs.tdwg.org/dwc/terms/Taxon">
     <files>
       <location>famous.tsv</location>
