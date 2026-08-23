@@ -317,6 +317,22 @@ FIELD_ORDER = ["title", "author", "editor", "year", "month", "journal", "booktit
                "publisher", "volume", "number", "pages", "doi", "issn", "isbn", "url"]
 
 
+KEY_OK = re.compile(r"^[A-Za-z0-9_.:+/-]+$")
+
+
+def safe_key(key, fields):
+    """A BibTeX key may not contain whitespace; some publishers emit author
+    names as keys, which aborts the parse of the whole file in ChecklistBank.
+    Rebuild those as Surname_Year."""
+    if KEY_OK.match(key):
+        return key
+    author = fields.get("author", "").strip("{}")
+    surname = re.split(r"\s*(?:,| and )", author)[0].strip()
+    surname = re.sub(r"[^A-Za-z0-9]", "", surname) or "ref"
+    year = re.sub(r"[^0-9]", "", fields.get("year", "")) or "0000"
+    return f"{surname}_{year}"
+
+
 def tidy_bibtex(raw):
     """Reformat CrossRef's one-liner into the aligned style used in reference.bib."""
     raw = raw.strip()
@@ -342,6 +358,9 @@ def tidy_bibtex(raw):
 
     fields.sort(key=lambda kv: (FIELD_ORDER.index(kv[0])
                                 if kv[0] in FIELD_ORDER else 99, kv[0]))
+
+    key = safe_key(key, dict(fields))
+
     lines = [f"@{kind}{{{key},"]
     for i, (k, v) in enumerate(fields):
         comma = "," if i < len(fields) - 1 else ""

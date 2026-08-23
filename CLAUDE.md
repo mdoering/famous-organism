@@ -140,6 +140,12 @@ awk -F'\t' 'NR>1{print $1}' name_usage.tsv | sort | uniq -d
 # no duplicate BibTeX keys
 grep -o '^@[a-zA-Z]*{[^,]*' reference.bib | sed 's/.*{//' | sort | uniq -d
 
+# BibTeX keys must not contain whitespace. A single invalid key aborts the
+# parse of the WHOLE file in ChecklistBank: referenceCount drops to 0 and
+# bib:BibTeX disappears from verbatimByTermCount, with every nameReferenceID
+# then reported as "reference id invalid".
+grep -n '^@[a-zA-Z]*{[^,]*[[:space:]][^,]*,' reference.bib
+
 # nameReferenceID <-> reference.bib key cross-check (both sides should be empty)
 grep -o '^@[a-zA-Z]*{[^,]*' reference.bib | sed 's/.*{//' | sort -u > /tmp/keys.txt
 awk -F'\t' 'NR>1 && $10!=""{print $10}' name_usage.tsv | sort -u > /tmp/refs.txt
