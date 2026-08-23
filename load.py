@@ -347,7 +347,9 @@ def tidy_bibtex(raw):
             continue
         k, v = part.split("=", 1)
         k, v = k.strip().lower(), v.strip()
-        v = re.sub(r"<[^>]+>", "", v)              # CrossRef leaks <i> into titles
+        if k not in ("doi", "url"):                # AMNH-style DOIs contain <...>
+            v = re.sub(r"</?(?:i|b|em|strong|sub|sup|scp|span)\b[^>]*>", "", v,
+                       flags=re.I)                    # CrossRef leaks <i> into titles
         v = re.sub(r"\s+", " ", v).strip()
         inner = v[1:-1].strip() if v.startswith("{") and v.endswith("}") else v
         if k in BARE and re.fullmatch(r"[A-Za-z0-9]+", inner):
@@ -377,7 +379,7 @@ def read_tsv(path):
 
 
 def existing_bib(path):
-    """-> (set of keys, dict doi -> key)"""
+    """-> (set of lowercased keys, dict doi -> key)"""
     text = open(path, encoding="utf-8").read()
     keys, by_doi = set(), {}
     for entry in re.split(r"(?m)^(?=@)", text):
@@ -385,7 +387,7 @@ def existing_bib(path):
         if not m:
             continue
         key = m.group(1).strip()
-        keys.add(key)
+        keys.add(key.lower())   # ChecklistBank reference IDs are case-insensitive
         d = re.search(r"(?m)^\s*doi\s*=\s*\{?([^\},\n]+)", entry, flags=re.I)
         if d:
             by_doi[d.group(1).strip().lower()] = key
@@ -458,10 +460,11 @@ def main():
             else:
                 key, entry = tidy_bibtex(crossref_bibtex(c["doi"]))
                 if key:
-                    while key in bib_keys:          # CrossRef keys can collide
+                    while key.lower() in bib_keys:  # CrossRef keys can collide,
+                                                    # and only in case (ZOOTAXA vs Zootaxa)
                         key += "a"
                         entry = re.sub(r"^@(\w+)\{[^,]+,", rf"@\1{{{key},", entry)
-                    bib_keys.add(key)
+                    bib_keys.add(key.lower())
                     bib_by_doi[doi] = key
                     new_bib.append(entry)
                     c["refkey"] = key
