@@ -19,6 +19,7 @@ import os
 import re
 import sys
 import time
+import unicodedata
 import urllib.parse
 import urllib.request
 
@@ -317,18 +318,31 @@ FIELD_ORDER = ["title", "author", "editor", "year", "month", "journal", "booktit
                "publisher", "volume", "number", "pages", "doi", "issn", "isbn", "url"]
 
 
-KEY_OK = re.compile(r"^[A-Za-z0-9_.:+/-]+$")
+# no whitespace, and no ":" or "/" either: DataCite (Zenodo, ResearchGate)
+# exports BibTeX keyed by the DOI *URL*, which ChecklistBank rejects as an id
+KEY_OK = re.compile(r"^[A-Za-z0-9_.-]+$")
+
+
+def deaccent(text):
+    """Bachli <- Bächli, so folded names keep their letters."""
+    return "".join(c for c in unicodedata.normalize("NFKD", text)
+                   if not unicodedata.combining(c))
 
 
 def safe_key(key, fields):
-    """A BibTeX key may not contain whitespace; some publishers emit author
-    names as keys, which aborts the parse of the whole file in ChecklistBank.
-    Rebuild those as Surname_Year."""
+    """A BibTeX key may not contain whitespace, ":" or "/". Some publishers emit
+    author names as keys (which aborts the parse of the whole file in
+    ChecklistBank) and DataCite emits the DOI URL. Rebuild those as
+    Surname_Year, falling back to the DOI when the author does not fold to
+    latin script."""
     if KEY_OK.match(key):
         return key
-    author = fields.get("author", "").strip("{}")
+    author = fields.get("author", "").strip("{} ")
     surname = re.split(r"\s*(?:,| and )", author)[0].strip()
-    surname = re.sub(r"[^A-Za-z0-9]", "", surname) or "ref"
+    surname = re.sub(r"[^A-Za-z0-9]", "", deaccent(surname))
+    if not surname:
+        doi = fields.get("doi", "")
+        surname = re.sub(r"[^A-Za-z0-9]", "", doi.split("/")[-1])[:24] or "ref"
     year = re.sub(r"[^0-9]", "", fields.get("year", "")) or "0000"
     return f"{surname}_{year}"
 
