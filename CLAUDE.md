@@ -42,6 +42,7 @@ The import report is the closest thing this repo has to a test run — check `is
 | `reference.bib` | ColDP BibTeX reference file. Entry keys are the primary keys referenced by `nameReferenceID`. |
 | `metadata.yaml` | ColDP dataset metadata. Its `$schema=metadata.json` header points at the schema in the `coldp` repo, not at a local file. |
 | `lookup.sh` | Reads DOIs on stdin, appends CrossRef BibTeX to `newrefs.bib` (gitignored scratch file). |
+| `load.py` | Bulk loader for external sources. Parses the six English Wikipedia "List of organisms named after famous people" pages, resolves classification via ChecklistBank and references via CrossRef, and emits new ColDP rows. |
 | `pre-commit.hook` | Repo copy of the git hook that stamps today's date into `metadata.yaml` `issued:`/`version:`. |
 
 All TSVs: tab-delimited, header row, **LF** line endings, UTF-8, no quoting (no field may contain a tab).
@@ -79,6 +80,45 @@ Only terms defined in the backend's `ColdpTerm` enum are read — an unrecognise
   ```
   reformat to the file's aligned-`=` style (CrossRef returns one long line), append to the end of `reference.bib` — the file is in append order, not sorted — and use its key as `nameReferenceID`. CrossRef's generated keys (`HUANG_2026`) are kept verbatim, which is why casing is mixed.
 - Commit messages close issues on this repo's own GitHub tracker (`Add Hemiandrus jacinda, fixes #20`).
+
+### Bulk loading with `load.py`
+
+```sh
+./load.py                 # dry run -> candidates.tsv + a summary
+./load.py --limit 50      # only the first 50 new names (testing)
+./load.py --apply         # append the candidates to the ColDP files
+./load.py --no-refs       # skip CrossRef, leave nameReferenceID empty
+```
+
+It is **re-runnable**: every name already in `name_usage.tsv` is skipped, so a later
+run only picks up names Wikipedia has gained since. All HTTP responses are cached
+under `.cache/` (gitignored), so repeat runs are cheap.
+
+What it does per row:
+
+- **Parses the wikitables** with proper `rowspan` resolution — several rows share a
+  Type/Ref cell with the row above, which shifts every later cell left. A positional
+  parse without this reads the namesake out of the Type column.
+- **Names**: takes the *displayed* side of `[[target|display]]` links (the target is
+  often a different accepted name), strips `{{nowrap}}`/`{{small}}` wrappers, drops
+  subgenera (`Agra (Agra) x` → `Agra x`), and keeps hybrids (`Kalanchoe × poincarei`).
+- **`extinct`** comes from the `†` marker in the taxon cell.
+- **`etymology`** is `Person: quote`, where the quote is the publication text
+  Wikipedia gives in the Notes column, with its quote marks stripped. Bare `Person`
+  when there is no quote. Only these facts are taken — never Wikipedia's own prose —
+  which keeps the CC0 licence of this dataset clean.
+- **Classification** is resolved against the current COL release via
+  `api.checklistbank.org/dataset/3LR/match/nameusage`. The dry-run file records the
+  match type per row: `variant` is a real hit; `higherrank` means only the genus
+  matched, so `kingdom`…`family` are still right but the name itself is not in COL;
+  `none` means no match and the classification columns are left empty.
+- **References**: the `doi=` in the row's `{{cite}}` template is resolved to BibTeX
+  via CrossRef and reformatted into this file's aligned style. DOIs already present
+  in `reference.bib` reuse the existing key rather than adding a duplicate.
+
+Every candidate is emitted as `status=accepted`. Some are synonyms in COL, but this
+dataset has no accepted taxon to point a `parentID` at, and 119 of the original 122
+rows follow the same "name as published" convention.
 
 ### The pre-commit hook
 

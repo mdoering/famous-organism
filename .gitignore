@@ -1,2 +1,5 @@
 .DS_Store
 newrefs.bib
+.cache/
+candidates.tsv
+__pycache__/
