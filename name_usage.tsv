@@ -121,3 +121,4 @@ ID	parentID	basionymID	status	rank	etymology	scientificName	authorship	namePubli
 121			accepted	species	Leonardo DiCaprio	Uvariopsis dicaprio	Cheek & Gosline	2022	Gosline_2022	FALSE	Plantae				Annonaceae	https://doi.org/10.7717/peerj.12614
 122			accepted	species	Greta Thunberg	Craspedotropis gretathunbergae	Schilthuizen et al., 2020	2020	Schilthuizen_2020	FALSE	Animalia	Mollusca	Gastropoda		Cyclophoridae	https://doi.org/10.3897/BDJ.8.e47484
 123			accepted	species	Karl Lagerfeld	Jotus karllagerfeldi	Baehr, Schubert & Harms, 2019	2019	Baehr_2019	FALSE	Animalia	Arthropoda	Arachnida	Araneae	Salticidae	https://doi.org/10.3897/evolsyst.3.34496
+124			accepted	species	Slash (Guns N' Roses)	Lielaphis slashi	Huang et al., 2026	2026	HUANG_2026	FALSE	Animalia	Chordata	Reptilia	Squamata	Colubridae	https://doi.org/10.11646/zootaxa.5866.2.6
