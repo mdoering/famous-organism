@@ -137,14 +137,16 @@ awk -F'\t' 'NF!=17{print NR": "NF" fields"}' name_usage.tsv
 # no duplicate usage IDs
 awk -F'\t' 'NR>1{print $1}' name_usage.tsv | sort | uniq -d
 
-# no duplicate BibTeX keys
-grep -o '^@[a-zA-Z]*{[^,]*' reference.bib | sed 's/.*{//' | sort | uniq -d
+# no duplicate BibTeX keys -- compare LOWERCASED, ChecklistBank reference ids
+# are case-insensitive, so Huber_2018 and HUBER_2018 are the same id to it and
+# one of the two entries is silently dropped
+grep -o '^@[a-zA-Z]*{[^,]*' reference.bib | sed 's/.*{//' | tr 'A-Z' 'a-z' | sort | uniq -d
 
-# BibTeX keys must not contain whitespace. A single invalid key aborts the
-# parse of the WHOLE file in ChecklistBank: referenceCount drops to 0 and
-# bib:BibTeX disappears from verbatimByTermCount, with every nameReferenceID
-# then reported as "reference id invalid".
-grep -n '^@[a-zA-Z]*{[^,]*[[:space:]][^,]*,' reference.bib
+# BibTeX keys must match [A-Za-z0-9_.-]+ . Whitespace aborts the parse of the
+# WHOLE file, and ":" or "/" (DataCite keys entries by the DOI *URL*) makes CLB
+# reject the id. Either way referenceCount drops, bib:BibTeX disappears from
+# verbatimByTermCount, and nameReferenceIDs are reported "reference id invalid".
+grep -o '^@[a-zA-Z]*{[^,]*' reference.bib | sed 's/.*{//' | grep -v '^[A-Za-z0-9_.-]*$'
 
 # nameReferenceID <-> reference.bib key cross-check (both sides should be empty)
 grep -o '^@[a-zA-Z]*{[^,]*' reference.bib | sed 's/.*{//' | sort -u > /tmp/keys.txt
@@ -159,12 +161,47 @@ for f in vernacular_name.tsv media.tsv; do
     name_usage.tsv "$f"
 done
 
+# every higher taxon must have exactly ONE parent path. CLB materialises the
+# implicit higher taxa from the denormalised kingdom..family columns, so a row
+# that leaves an intermediate rank empty (Plantae > - > - > Rosales) or uses a
+# different placement mints a SECOND copy of that taxon -- reported as
+# "duplicate name" with origin=denormed classification in the import.
+python3 - <<'EOF'
+import collections
+rows = [l.split('\t') for l in open('name_usage.tsv', encoding='utf-8').read().split('\n') if l]
+hdr, rows = rows[0], rows[1:]
+K, P, C, O, F = (hdr.index(x) for x in ('kingdom', 'phylum', 'class', 'order', 'family'))
+for label, idx, anc in (("family", F, (K, P, C, O)), ("order", O, (K, P, C)),
+                        ("class", C, (K, P)), ("phylum", P, (K,))):
+    seen = collections.defaultdict(set)
+    for r in rows:
+        if len(r) == len(hdr) and r[idx]:
+            seen[r[idx]].add(tuple(r[i] for i in anc))
+    for name, paths in sorted(seen.items()):
+        if len(paths) > 1:
+            print(f"{label} {name}:")
+            for path in sorted(paths):
+                print("   ", " > ".join(x or "-" for x in path))
+EOF
+
 # links must be URIs
 awk -F'\t' 'NR>1 && $17!="" && $17 !~ /^https?:\/\//{print $1": "$17}' name_usage.tsv
 
 # no CRLF crept back in
 grep -lc $'\r' *.tsv *.bib *.yaml
 ```
+
+Resolve any conflict the audit reports against COL rather than by hand — it is
+the placement the bulk-loaded rows already use:
+
+```sh
+curl -s "https://api.checklistbank.org/dataset/3LR/match/nameusage?q=Gobiidae" \
+  | jq -r '.usage.classification[] | "\(.rank)\t\(.name)"'
+```
+
+Watch for ranks COL has moved: `Agaricomycotina` is a subphylum not a class,
+`Actinopterygii` a gigaclass not a class, and `Gobiidae` sits in `Gobiiformes`
+rather than `Perciformes`.
 
 ## Related Context
 
