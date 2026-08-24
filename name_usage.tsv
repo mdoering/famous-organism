@@ -38,17 +38,17 @@ ID	parentID	basionymID	status	rank	etymology	scientificName	authorship	namePubli
 36			accepted	species	Miles Davis	Milesdavis eldredgei	Liebermann	1994			Animalia					http://hdl.handle.net/2246/831
 37			accepted	genus	David Attenborough	Sirdavidia	Couvreur et al.	2015	Couvreur_2015		Plantae					
 38			accepted	species	David Attenborough	Electrotettix attenboroughi	Heads & Thomas, 2014	2014	Heads_2014		Animalia	Arthropoda	Insecta	Orthoptera		
-39			accepted	species	David Attenborough	Hieracium attenboroughianum	Rich	2014	Rich_2014		Plantae			Asterales	Asteraceae	
+39			accepted	species	David Attenborough	Hieracium attenboroughianum	Rich	2014	Rich_2014		Plantae	Tracheophyta	Magnoliopsida	Asterales	Asteraceae	
 40			accepted	species	David Attenborough	Polioptila attenboroughi	Whittaker, Aleixo, Smith & Klicka, 2013	2013			Animalia	Chordata	Aves	Passeriformes		http://treatment.plazi.org/id/67E76402-2B97-4733-856F-ED3A7A1822AC
 41			accepted	species	David Attenborough	Prethopalpus attenboroughi	Baehr & Harvey, 2012	2012	Baehr_2012		Animalia					
 42			accepted	species	David Attenborough	Trigonopterus attenboroughi	Riedel, 2014	2014	Riedel_2014		Animalia	Arthropoda	Insecta	Coleoptera		
 43			accepted	species	David Attenborough	Zaglossus attenboroughi	Flannery & Groves, 1998	1998	FLANNERY_1998		Animalia	Chordata	Mammalia		Tachyglossidae	
 44			accepted	species	Greedo	Peckoltia greedoi	Armbruster et al.	1998	Armbruster_2015		Animalia					
 45			accepted	species	Neil Young	Myrmekiaphila neilyoungi	Jason Bond	2007			Animalia	Arthropoda	Arachnida			
-46			accepted	species	Roy Orbison	Orectochilus orbisonorum		2008			Animalia	Arthropoda		Coleoptera		
+46			accepted	species	Roy Orbison	Orectochilus orbisonorum		2008			Animalia	Arthropoda	Insecta	Coleoptera		
 47			accepted	species	Freddie Mercury	Cirolana mercuryi					Animalia	Arthropoda				
 48			accepted	species	Jerry Garcia	Cryptocercus garciai					Animalia	Arthropoda	Insecta			
-49			accepted	species	Green Day	Macrocarpaea dies-viridis					Plantae			Gentianales	Gentianaceae	
+49			accepted	species	Green Day	Macrocarpaea dies-viridis					Plantae	Tracheophyta	Magnoliopsida	Gentianales	Gentianaceae	
 50			accepted	species	Frank Zappa	Pachygnatha zappa					Animalia	Arthropoda	Arachnida			
 51		52	accepted	species	Sting	Dendropsophus stingi	(Kaplan, 1994)	2005			Animalia	Chordata	Amphibia	Anura	Hylidae	
 52	51		synonym	species	Sting	Hyla stingi	Kaplan, 1994	1994	Kaplan_1994		Animalia	Chordata	Amphibia	Anura	Hylidae	
@@ -57,13 +57,13 @@ ID	parentID	basionymID	status	rank	etymology	scientificName	authorship	namePubli
 55			accepted	species	James Taylor	Anacroneuria taylori					Animalia	Arthropoda	Insecta			
 56			accepted	species	Carole King	Anacroneuria carole					Animalia	Arthropoda	Insecta			
 57			accepted	species	James Brown	Funkotriplogynium iagobadius	Seeman & Walter, 1997	1997			Animalia	Arthropoda	Arachnida	Mesostigmata		
-58			accepted	species	Barack and Michelle Obama	Teleogramma obamaorum	Stiassny & Alter, 2015	2015	Stiassny_2015	FALSE	Animalia	Chordata			Cichlidae	http://www.fishbase.org/summary/67778
-59			accepted	species	Barack Obama	Tosanoides obama	Pyle, Greene & Kosaki	2016	Pyle_2016	FALSE	Animalia	Chordata		Perciformes	Serranidae	http://zoobank.org/18C72D73-00C3-40E4-B27F-FA7748A1251E
+58			accepted	species	Barack and Michelle Obama	Teleogramma obamaorum	Stiassny & Alter, 2015	2015	Stiassny_2015	FALSE	Animalia	Chordata	Teleostei	Cichliformes	Cichlidae	http://www.fishbase.org/summary/67778
+59			accepted	species	Barack Obama	Tosanoides obama	Pyle, Greene & Kosaki	2016	Pyle_2016	FALSE	Animalia	Chordata	Teleostei	Perciformes	Serranidae	http://zoobank.org/18C72D73-00C3-40E4-B27F-FA7748A1251E
 60			accepted	genus	Barack Obama	Obamadon	Longrich et al., 2013	2013	pnas.1303907110	TRUE	Animalia	Chordata	Reptilia	Squamata		
 61			accepted	species	Barack Obama	Obamadon gracillis	Longrich et al., 2013	2013	pnas.1303907110	TRUE	Animalia	Chordata	Reptilia	Squamata		
 62			accepted	genus	Barack Obama	Baracktrema	Roberts et al., 2016	2016	Roberts_2016	FALSE	Animalia	Platyhelminthes	Trematoda	Strigeidida	Schistosomatidae	
 63			accepted	species	Barack Obama	Baracktrema obamai	Roberts et al., 2016	2016	Roberts_2016	FALSE	Animalia	Platyhelminthes	Trematoda	Strigeidida	Schistosomatidae	
-64			accepted	species	Barack Obama	Etheostoma obama	Mayden & Layman, 2012	2012	Layman_2012	FALSE	Animalia	Chordata		Perciformes	Percidae	http://specifyassets.nhm.ku.edu/Ichthyology/originals/sp62866480801339482162.att.pdf
+64			accepted	species	Barack Obama	Etheostoma obama	Mayden & Layman, 2012	2012	Layman_2012	FALSE	Animalia	Chordata	Teleostei	Perciformes	Percidae	http://specifyassets.nhm.ku.edu/Ichthyology/originals/sp62866480801339482162.att.pdf
 65			accepted	species	Barack Obama	Caloplaca obamae	Knudsen, 2009	2009	Knudsen_2009	FALSE	Fungi	Ascomycota	Lecanoromycetes	Teloschistales	Teloschistaceae	http://sweetgum.nybg.org/images3/250/136/op6p2.pdf
 66			accepted	species	Barack Obama	Aptostichus barackobamai	Bond, 2012	2012	Bond_2012	FALSE	Animalia	Arthropoda	Arachnida	Araneae	Euctenizidae	https://en.wikipedia.org/wiki/Aptostichus_barackobamai
 67			accepted	species	Barack Obama	Paragordius obamai	Hanelt, 2012	2012	Hanelt_2012	FALSE	Animalia	Nematomorpha				
@@ -71,7 +71,7 @@ ID	parentID	basionymID	status	rank	etymology	scientificName	authorship	namePubli
 69			accepted	species	Donald Trump	Neopalpa donaldtrumpi	Nazari, 2017	2017	Nazari_2017	FALSE	Animalia	Arthropoda	Insecta	Lepidoptera		https://doi.org/10.3897/zookeys.646.11411
 70			accepted	species	Donald Trump	Tetragramma donaldtrumpi	Thompson, 2016	2016	Thompson_2016	TRUE	Animalia	Echinodermata	Echinoidea		Pseudodiadematidae	http://zoobank.org/NomenclaturalActs/C0F80BB8-728C-4151-B639-C764B5D8FA4A
 71	72		synonym	subspecies	Theodore Roosevelt	Cervus elaphus roosevelti	Merriam, 1897	1897		FALSE	Animalia					http://explorer.natureserve.org/servlet/NatureServe?searchName=Cervus+elaphus+roosevelti
-72		71	accepted	subspecies	Theodore Roosevelt	Cervus canadensis roosevelti	(Merriam, 1897)			FALSE	Animalia	Chordata	Mammalia		Cervidae	https://en.wikipedia.org/wiki/Elk#Taxonomy
+72		71	accepted	subspecies	Theodore Roosevelt	Cervus canadensis roosevelti	(Merriam, 1897)			FALSE	Animalia	Chordata	Mammalia	Artiodactyla	Cervidae	https://en.wikipedia.org/wiki/Elk#Taxonomy
 73			accepted	species	Theodore Roosevelt	Crocidura roosevelti	(Heller, 1910)			FALSE	Animalia	Chordata	Mammalia	Eulipotyphla	Soricidae	http://www.iucnredlist.org/details/41355/0
 74			accepted	species	Theodore Roosevelt	Pheidole roosevelti	Mann, 1921	1921	zenodo.25892	FALSE	Animalia	Arthropoda	Insecta	Hymenoptera	Formicidae	http://hol.osu.edu/index.html?id=33974
 75			accepted	species	Isabella Rossellini	Ptomaphaginus isabellarossellini	Schilthuizen, Njunjić & Perreau, 2018	2018	Schilthuizen_2018	FALSE	Animalia	Arthropoda	Insecta	Coleoptera	Leiodidae	http://zoobank.org/87C3F9D7-6CBD-4351-B96F-307A65F0716D
@@ -86,8 +86,8 @@ ID	parentID	basionymID	status	rank	etymology	scientificName	authorship	namePubli
 84			accepted	species	David Attenborough	Apoleptomastix attenboroughi	Noyes & Hayat, 1994	1994		FALSE	Animalia	Arthropoda	Insecta	Hymenoptera	Encyrtidae	
 85			accepted	species	David Attenborough	Succinalophus attenboroughi	Legalov, 2016	2016		FALSE	Animalia	Arthropoda	Insecta	Coleoptera	Curculionidae	
 86			accepted	genus	Lou Reed	Loureedia	Miller 2012	2012	Miller_2012	FALSE	Animalia	Arthropoda	Arachnida	Araneae	Eresidae	https://zookeys.pensoft.net/articles.php?id=2798
-87			accepted	species	Emperor Akihito	Exyrias akihito	Allen & Randall, 2005	2005	Allen_2005	FALSE	Animalia	Chordata	Actinopterygii	Perciformes	Gobiidae	http://zoobank.org/NomenclaturalActs/c0ab159e-00c8-481b-8d3a-2762082df33d
-89			accepted	species	Joni Mitchell	Cortinarius jonimitchelliae	H. Lindstr., Dima, Kytöv., Liimat. & Niskanen	2016	Dima_2016	FALSE	Fungi	Basidiomycota	Agaricomycotina	Agaricales	Cortinariaceae	https://doi.org/10.1007/s11557-016-1217-5
+87			accepted	species	Emperor Akihito	Exyrias akihito	Allen & Randall, 2005	2005	Allen_2005	FALSE	Animalia	Chordata	Teleostei	Gobiiformes	Gobiidae	http://zoobank.org/NomenclaturalActs/c0ab159e-00c8-481b-8d3a-2762082df33d
+89			accepted	species	Joni Mitchell	Cortinarius jonimitchelliae	H. Lindstr., Dima, Kytöv., Liimat. & Niskanen	2016	Dima_2016	FALSE	Fungi	Basidiomycota	Agaricomycetes	Agaricales	Cortinariaceae	https://doi.org/10.1007/s11557-016-1217-5
 90			accepted	species	Greta Thunberg	Nelloptodes gretae	Darby, 2019	2019	Darby_2019	FALSE	Animalia	Arthropoda	Insecta	Coleoptera	Ptiliidae	https://www.ingentaconnect.com/content/pemberley/emm/2019/00000155/00000004/art00007
 91			accepted	species	Arnold Schwarzenegger	Agra schwarzeneggeri	Erwin, 2002	2002	ERWIN_2002	FALSE	Animalia	Arthropoda	Insecta	Coleoptera	Carabidae	https://biotaxa.org/Zootaxa/article/view/zootaxa.119.1.1
 93			accepted	species	Barack Obama	Spintharus barackobamai	Agnarsson & Sargeant, 2018	2018	Agnarsson_2017	FALSE	Animalia	Arthropoda	Arachnida	Araneae	Theridiidae	https://www.eurekalert.org/pub_releases/2017-09/oupu-csn092617.php
@@ -110,7 +110,7 @@ ID	parentID	basionymID	status	rank	etymology	scientificName	authorship	namePubli
 110			accepted	species	Edward Osborne Wilson	Dacetinops wilsoni	Taylor, 1985	1985	x3	FALSE	Animalia	Arthropoda	Insecta	Hymenoptera	Formicidae	https://www.antcat.org/catalog/436303
 111			accepted	species	Jacinda Ardern	Hemiandrus jacinda	Trewick, 2021	2021	TREWICK_2021	FALSE	Animalia	Arthropoda	Insecta	Orthoptera	Anostostomatidae	http://zoobank.org/NomenclaturalActs/b98129ce-b464-4c32-98e6-8b4b2f007f57
 112			accepted	species	Bram Stoker	Draculoides bramstokeri	Harvey & Humphreys, 1995	1995	x4	FALSE	Animalia	Arthropoda	Arachnida	Schizomida	Hubbardiidae	https://library.museum.wa.gov.au/internaldocs/19145/Harvey&Humphreys1995NotesonDraculoides.pdf
-113			accepted	species	Jean-Baptiste Lamarck	Amelanchier lamarckii	F.G.Schroed.	1968	Schroeder_1968	FALSE	Plantae			Rosales	Rosaceae	https://en.wikipedia.org/wiki/Amelanchier_lamarckii
+113			accepted	species	Jean-Baptiste Lamarck	Amelanchier lamarckii	F.G.Schroed.	1968	Schroeder_1968	FALSE	Plantae	Tracheophyta	Magnoliopsida	Rosales	Rosaceae	https://en.wikipedia.org/wiki/Amelanchier_lamarckii
 114			accepted	species	Adolf Hitler	Anophthalmus hitleri	Scheibel, 1937	1937	x5	FALSE	Animalia	Arthropoda	Insecta	Coleoptera	Carabidae	https://en.wikipedia.org/wiki/Anophthalmus_hitleri
 115			accepted	species	Taylor Swift	Nannaria swiftae	Hennen, Means & Marek, 2022	2022	Hennen_2022	FALSE	Animalia	Arthropoda	Diplopoda	Polydesmida	Xystodesmidae	https://en.wikipedia.org/wiki/Nannaria_swiftae
 116			accepted	species	Vladimir Lenin	Leninia stellans	Fischer et al., 2013	2013	FISCHER_2013	TRUE	Animalia	Chordata	Reptilia	Ichthyosauria	Ophthalmosauridae	https://en.wikipedia.org/wiki/Leninia
@@ -118,8 +118,8 @@ ID	parentID	basionymID	status	rank	etymology	scientificName	authorship	namePubli
 118	117	117	synonym	species	Charles Darwin	Bombinator darwinii	(Duméril & Bibron, 1841)	1858	x7	FALSE	Animalia	Chordata	Amphibia	Anura	Rhinodermatidae	https://amphibiansoftheworld.amnh.org/Amphibia/Anura/Rhinodermatidae/Rhinoderma/Rhinoderma-darwinii
 119			accepted	species	Johann Wolfgang von Goethe & William Shakespeare	Goetheana shakespearei	Girault, 1920	1920	x8	FALSE	Animalia	Arthropoda	Insecta	Hymenoptera	Eulophidae	http://www.waspweb.org/Chalcidoidea/Eulophidae/Entedoninae/Goetheana/Goetheana_shakespearei.htm
 120			accepted	species	Wolfgang Amadeus Mozart & Ludwig van Beethoven	Mozartella beethoveni	Girault, 1926	1926	x9	FALSE	Animalia	Arthropoda	Insecta	Hymenoptera	Encyrtidae	https://sv.wikipedia.org/wiki/Mozartella_beethoveni
-121			accepted	species	Leonardo DiCaprio	Uvariopsis dicaprio	Cheek & Gosline	2022	Gosline_2022	FALSE	Plantae				Annonaceae	https://doi.org/10.7717/peerj.12614
-122			accepted	species	Greta Thunberg	Craspedotropis gretathunbergae	Schilthuizen et al., 2020	2020	Schilthuizen_2020	FALSE	Animalia	Mollusca	Gastropoda		Cyclophoridae	https://doi.org/10.3897/BDJ.8.e47484
+121			accepted	species	Leonardo DiCaprio	Uvariopsis dicaprio	Cheek & Gosline	2022	Gosline_2022	FALSE	Plantae	Tracheophyta	Magnoliopsida	Magnoliales	Annonaceae	https://doi.org/10.7717/peerj.12614
+122			accepted	species	Greta Thunberg	Craspedotropis gretathunbergae	Schilthuizen et al., 2020	2020	Schilthuizen_2020	FALSE	Animalia	Mollusca	Gastropoda	Architaenioglossa	Cyclophoridae	https://doi.org/10.3897/BDJ.8.e47484
 123			accepted	species	Karl Lagerfeld	Jotus karllagerfeldi	Baehr, Schubert & Harms, 2019	2019	Baehr_2019	FALSE	Animalia	Arthropoda	Arachnida	Araneae	Salticidae	https://doi.org/10.3897/evolsyst.3.34496
 124			accepted	species	Slash (Guns N' Roses)	Lielaphis slashi	Huang et al., 2026	2026	HUANG_2026	FALSE	Animalia	Chordata	Reptilia	Squamata	Colubridae	https://doi.org/10.11646/zootaxa.5866.2.6
 125			accepted	species	Maturin (Stephen King)	Peltocephalus maturin	Ferreira et al., 2024	2024	Ferreira_2024	TRUE	Animalia	Chordata	Reptilia	Testudines	Podocnemididae	https://doi.org/10.1098/rsbl.2024.0010
