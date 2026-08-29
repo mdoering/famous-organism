@@ -1591,7 +1591,7 @@ ID	parentID	basionymID	status	rank	etymology	scientificName	authorship	namePubli
 1591			accepted	genus	Henry David Thoreau	Thoreauia	Girault, 1916	1916		FALSE	Animalia	Arthropoda	Insecta	Hymenoptera	Trichogrammatidae	
 1592			accepted	species	Pancho Villa	Thorichthys panchovillai	Del Moral-Flores, López-Segovia & Hernández-Arellano, 2017	2017	Del_Moral_Flores_2017	FALSE	Animalia	Chordata	Teleostei	Cichliformes	Cichlidae	https://doi.org/10.15381/rpb.v24i1.13104
 1593			accepted	species	Roald Amundsen	Thouarella amundseni	Núñez-Flores, Gomez-Uchida & López-González, 2021	2021	N_ez_Flores_2021	FALSE	Animalia	Cnidaria	Octocorallia	Scleralcyonacea	Primnoidae	https://doi.org/10.1071/IS20078
-1594			accepted	genus	J. R. R. Tolkien	Tolkienia	Lieberman & Kloc, 1997	1997		TRUE						
+1594			accepted	genus	J. R. R. Tolkien	Tolkienia	Lieberman & Kloc, 1997	1997		TRUE	Animalia	Arthropoda	Trilobita	Phacopida	Acastidae	
 1595			accepted	species	Paul Gauguin	Trachinocephalus gauguini	Polanco, Acero & Betancur, 2016	2016	Polanco_F__2016	FALSE	Animalia	Chordata	Teleostei	Aulopiformes	Synodontidae	https://doi.org/10.1111/jfb.13038
 1596			accepted	subspecies	Menelik II	Tragelaphus scriptus meneliki	Neumann, 1902	1902		FALSE	Animalia	Chordata	Mammalia	Artiodactyla	Bovidae	
 1597			accepted	species	Guy de Maupassant	Trichaporoidella maupaussanti	Girault, 1915	1915		FALSE	Animalia	Arthropoda	Insecta	Hymenoptera	Eulophidae	
